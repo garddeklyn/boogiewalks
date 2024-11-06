@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(178, 5, 71);
+    background-image: url('imgs/untouchables2.jpg');
+    height: 100%
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .wrapper > * {
+    flex: 1 100%;
+  }
+
+  
+  /* for mobile */
+  @media all and (max-width: 800px) {
+
+    .song {
+      display: inline-block;
+      order: 1;
+      width: 70%;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .main {
+      display: flex;
+      order: 2;
+      text-align: left;
+      font-size: 4em;
+      font-weight: bold;
+      padding-left: 1em;
+      padding-top: 1em;
+      padding-right: 1em;
+    }
+  
+    .aside{
+      flex: 1;
+      order: 3;
+      font-family: sans-serif;
+      padding: 1em;
+      padding-top: 1em;
+      font-size: 1em;
+      text-align: center;
+      color: rgb(214, 168, 16);
+    }
+
+  }
+  
+
+  /* for large screens */
+  
+  @media all and (min-width: 801px) {
+    .song {
+      display: flex;
+      order: 1;
+      width: 70%;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      padding-top: 3em;
+    }
+    
+    .main {
+      flex: 3;
+      order: 3;
+      font-size: 4em;
+      padding-left: 3em;
+      padding-top: 1em;
+      padding-right: 1em;
+    }
+  
+    .aside {
+      /* this says ASIDE TAKES UP 1 COLUMN > change this number to change width   */
+      flex: 1;
+      order: 2;
+      font-family: sans-serif;
+      padding: 1em;
+      padding-top: 1em;
+      text-align: center;
+      font-size: 2em;
+      color: rgb(214, 168, 16);
+    }
+  
+    .fixed {
+      position: fixed;
+      bottom: 15%;
+      padding-top: 3em;
+      z-index: 5;
+    }
+  }
+
+
+      /* first image */
+  
+  .tc-container{
+    width: 400px;
+    height: auto;
+    position: relative;
+  }
+  .tc-container img{
+    width: 100%;
+    Height: auto;
+  }
+  .top-img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  }
+  .top-img:hover {
+    opacity: 1;
+  }
+
+      /* second image */
+
+  .ab-container{
+    width: 400px;
+    height: auto;
+    position: relative;
+  }
+  .ab-container img{
+    width: 100%;
+    Height: auto;
+  }
+  .top-img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  }
+  .top-img:hover {
+    opacity: 1;
+  }

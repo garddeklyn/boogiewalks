@@ -1,0 +1,252 @@
+body{
+    background-color: rgb(255, 255, 255);
+
+    cursor: url('imgs/cursor.png'), pointer;
+}
+
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
+.block{
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'FontSpring';
+    src: url('fonts/Fontspring-DEMO-geon-light.otf');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'PressStart';
+    src: url('fonts/PressStart2P-Regular.ttf');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+
+
+/* SMALL PAGE */
+@media all and (max-width: 850px) {
+
+.space{
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bfixed{
+    position: fixed;
+    left: 40%;
+    top: -.5%;
+    }
+
+
+h1{
+    font-family: 'FontSpring';
+    font-size: 11px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.units{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 5px;
+    border-style: solid;
+}
+
+.units img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 140px;
+    max-height: 140px;
+    color: #333;
+    font-family: 'PressStart';
+    font-size: 8px;
+    line-height: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    max-width: 140px;
+    max-height: 140px;
+    color: #333;
+    font-family: 'PressStart';
+    font-size: 10px;
+    line-height: 20px;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: 
+        typing 4s steps(14),
+        cursor .4s step-end infinite alternate;
+        animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width:0}
+}
+
+
+.song {
+    display: flex;
+    width: 20%;
+    scale: 15%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+
+.fixed {
+    position: fixed;
+    left: 40%;
+    top: -.5%;
+    }
+
+.bird {
+    display: flex;
+    order: 3;
+    width: 20%;
+    scale: 40%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.afixed {
+    position: fixed;
+    left: 40%;
+    bottom: 0%;
+    }
+
+}
+
+
+
+/* LARGE PAGE */
+@media all and (min-width: 851px) {
+
+.space{
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.units{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 10px;
+    border-style: solid;
+}
+
+.units img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 290px;
+    max-height: 290px;
+    color: #333;
+    font-family: 'PressStart';
+    font-size: 18px;
+    line-height: 25px;
+    outline: none;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    max-width: 290px;
+    max-height: 290px;
+    color: #333;
+    font-family: 'PressStart';
+    font-size: 18px;
+    line-height: 25px;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: 
+        typing 4s steps(17),
+        cursor .4s step-end infinite alternate;
+        animation-iteration-count: infinite;
+        
+}
+
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width:0}
+}
+
+
+
+h1{
+    font-family: 'FontSpring';
+    font-size: 24px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: black;
+}
+
+
+.song {
+    display: flex;
+    width: 20%;
+    scale: 25%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.fixed {
+    position: fixed;
+    left: 40%;
+    top: 2%;
+    }
+    
+.bird {
+    display: flex;
+    width: 50%;
+    scale: 50%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+        
+.afixed {
+    position: fixed;
+    bottom: 0%;
+    right: -5%;
+    }
+    
+
+}

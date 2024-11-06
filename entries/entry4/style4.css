@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'plz';
+    src: url('fonts/plz.ttf');
+    font-weight:normal;
+    text-align: center; 
+}
+
+body {
+    cursor: url('imgs/rubyVroom9.png'), pointer;
+
+    background-color: rgb(177, 177, 177);
+    background-image: url('imgs/rubyVroom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {text-align: center;}
+
+    h1 {
+        font-family: 'plz';
+        text-align: center;
+        font-size: 3vw;
+        color: rgb(65, 65, 65);
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    h3 {
+        text-align: right;
+    }
+} 
+
+
+.ImageBlock:hover + .ImageHover {
+    border: 20px;
+    display: block;
+}
+
+.ImageHover{
+        display: none;
+}

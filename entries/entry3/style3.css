@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'staPortable';
+    src: url('fonts/staPortable.otf');
+    font-weight:normal;
+    text-align: center; 
+}
+
+@font-face {
+    font-family: 'sawarabiMincho';
+    src: url('fonts/sawarabiMincho.ttf');
+    font-weight:normal;
+    font-style:normal;
+    text-align: left; 
+}
+
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
+
+body{
+    cursor: url('imgs/cursor.png'), pointer;
+    
+    background-color: rgb(253, 236, 187);
+    background-image: url('imgs/harvest2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    p {text-align: center;}
+
+    h1 {
+        font-family: 'staPortable';
+        text-align: center;
+        font-size: 3vw;
+        color: rgb(73, 61, 49);
+    }
+
+    h2 {
+        font-family: 'sawarabiMincho';
+        text-align: left;
+        font-size: 2vw;
+        color: rgb(73, 61, 49);
+        letter-spacing: 1 px;
+        margin: 20px 50px 75px;
+    }
+
+    h3 {
+        font-family: 'sawarabiMincho';
+        text-align: center;
+        font-size: 2vw;
+        color: rgb(73, 61, 49);
+        letter-spacing: 1 px;
+        margin: 20px 50px 75px;
+    
+    }
+
+}

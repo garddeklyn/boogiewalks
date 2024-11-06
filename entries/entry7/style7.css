@@ -1,0 +1,224 @@
+body{
+    background-color: rgb(11, 13, 15);
+
+    cursor: url('imgs/cursor.png'), pointer;
+}
+
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
+@font-face {
+    font-family: 'ArialBlack';
+    src: url('fonts/ArialBlack.ttf');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.bg-fade-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-fade{
+    display: flex;
+    position: relative;
+    scale: 100%;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    animation-name: fade-zoom;
+    animation-duration: 6s;
+    animation-iteration-count: 
+    infinite;
+}
+
+
+
+.marquee{
+    width: 110%;
+    background-color: rgb(190, 127, 59);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.marquee div{
+    font-size: 2rem;
+    font-family: 'Arial Black';
+    animation: animate 60s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+}
+
+@keyframes animate{
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+.bfixed{
+    position: fixed;
+    top: 1%;
+}
+
+.cfixed{
+    position: fixed;
+    bottom: 1%;
+}
+
+
+
+/* SMALL PAGE */
+@media all and (max-width: 800px) {
+
+.bg-fade{
+    display: flex;
+    position: relative;
+    scale: 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    animation-name: fade-zoom;
+    animation-duration: 6s;
+    animation-iteration-count: 
+    infinite;
+    }
+
+.song {
+    display: flex;
+    order: 3;
+    width: 20%;
+    scale: 25%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2em;
+    color: red;
+    }
+
+.fixed {
+    position: fixed;
+    left: 42%;
+    top: 12%;
+    }
+
+.bird {
+    display: flex;
+    order: 3;
+    width: 20%;
+    scale: 30%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2em;
+    color: red;
+    }
+
+.afixed {
+    position: fixed;
+    left: 42%;
+    bottom: 12%;
+    }
+}
+
+/* LARGE PAGE */
+@media all and (min-width: 801px) {
+
+.bg-fade{
+    display: flex;
+    position: relative;
+    scale: 100%;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    animation-name: fade-zoom;
+    animation-duration: 6s;
+    animation-iteration-count: 
+    infinite;
+    }
+
+.song {
+    display: flex;
+    order: 3;
+    width: 50%;
+    scale: 30%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2em;
+    color: red;
+    }
+
+.fixed {
+    position: fixed;
+    top: 12%;
+    left: -5%;
+    }
+
+.bird {
+    display: flex;
+    order: 3;
+    width: 50%;
+    scale: 30%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2em;
+    color: red;
+    }
+    
+.afixed {
+    position: fixed;
+    bottom: 12%;
+    right: -10%;
+    }
+
+.music{
+    text-align: center;
+    display: inline-block;
+    }
+}
+
+
+
+
+
+.bg-fade:nth-child(1){
+    animation-delay: 0s;
+}
+
+.bg-fade:nth-child(2){
+    animation-delay: 2s;
+}
+
+.bg-fade:nth-child(3){
+    animation-delay: 4s;
+}
+
+@keyframes fade-zoom {
+    0%{
+        opacity: 0;
+    }
+    16.66%{
+        opacity: 1;
+    }
+    33.33%{
+        opacity: 1;
+    }
+    48.66%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+    }
