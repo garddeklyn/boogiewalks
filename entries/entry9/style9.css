@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(15, 15, 14);
+    cursor: url('imgs/cursor.png'), pointer;
+}
+
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
+@font-face {
+    font-family: 'FranklinGothic';
+    src: url('fonts/FranklinGothicBold.ttf');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.record{
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+/* SMALL PAGE */
+@media all and (max-width: 800px) {
+
+h1{
+    font-family: 'FranklinGothic';
+    font-size: 20vw;
+    color: rgb(255, 215, 4);
+    letter-spacing: -2vw;
+    text-align: center;
+    position: fixed;
+    left: 2vw;
+    top: -15vw;
+}
+
+h2{
+    font-family: 'FranklinGothic';
+    font-size: 4vw;
+    color: rgb(255, 215, 4);
+    letter-spacing: -.2vw;
+    text-align: center;
+    position: fixed;
+    left: 3vw;
+    top: 20vw;
+}
+
+.record{
+    display: flex;
+    position: relative;
+    top: 50%;
+    scale: 40%;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+}
+
+
+
+
+/* LARGE PAGE */
+@media all and (min-width: 801px) {
+
+h1{
+    font-family: 'FranklinGothic';
+    font-size: 10vw;
+    color: rgb(255, 215, 4);
+    letter-spacing: -1vw;
+    text-align: center;
+    position: fixed;
+    left: 2vw;
+    top: -8vw;
+}
+    
+h2{
+    font-family: 'FranklinGothic';
+    font-size: 3vw;
+    color: rgb(255, 215, 4);
+    letter-spacing: -.2vw;
+    text-align: center;
+    position: fixed;
+    right: 3vw;
+    bottom: 0vw;
+}
+
+.record{
+    display: flex;
+    position: fixed;
+    scale: 70%;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+}
