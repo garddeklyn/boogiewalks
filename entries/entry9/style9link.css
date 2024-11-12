@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(15, 15, 14);
+    cursor: url('imgs/cursor.png'), auto;
+}
+
+.tc-container{
+    width: 75%;
+    position: relative;
+    margin: auto;
+    left: 45px;
+  }
+.tc-container img{
+    width:75%;
+    Height: auto;
+    padding: 20px;
+  }
