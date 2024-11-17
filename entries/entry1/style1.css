@@ -1,0 +1,7 @@
+body{
+    cursor: url('imgs/cursor.png'), pointer;
+}
+
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+  }
