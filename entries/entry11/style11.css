@@ -1,0 +1,152 @@
+body {
+  background-color: rgb(9, 9, 9);
+
+  cursor: url('imgs/cursor.png'), pointer;
+  }
+
+  a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
+@keyframes animate{
+    10% {opacity: 0;}
+}
+
+.flicker {
+    animation: animate .05s infinite;
+}
+
+@font-face {
+  font-family: 'tomWaits';
+  src: url('fonts/angstridden.TTF');
+  font-weight:normal;
+  font-style:normal;
+}
+
+.marquee{
+  width: 110%;
+  z-index: -1;
+}
+
+.marquee div{
+  color: rgb(212, 40, 21);
+  font-family: 'tomWaits';
+  justify-content: center;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+  animation: marquee 120s linear infinite;
+  padding-left: 100%;
+  display: inline-block;
+}
+
+.bfixed{
+  position: fixed;
+}
+
+@keyframes marquee{
+  100%{
+      transform: translate(-100%, 0);
+  }
+}
+
+  
+/* SMALL PAGE */
+@media all and (max-width: 800px) {
+
+.smoke {
+  display: flex;
+  position: relative;
+  scale: 70%;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  order: 3;
+  width: 20%;
+  scale: 5%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+
+.fixed {
+  position: fixed;
+  left: 10%;
+  top: 5%;
+  }
+
+.subtitle {
+  display: flex;
+  order: 3;
+  width: 20%;
+  scale: 5%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+    
+.afixed {
+  position: fixed;
+  left: 65%;
+  bottom: 5%;
+  }
+
+}
+
+
+/* LARGE PAGE */
+@media all and (min-width: 801px) {
+
+.smoke {
+  display: flex;
+  position: relative;
+  scale: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+  margin-bottom: 100px;
+}
+
+.title {
+  display: flex;
+  order: 3;
+  width: 20%;
+  scale: 10%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+
+.fixed {
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  }
+
+.subtitle {
+  display: flex;
+  order: 3;
+  width: 20%;
+  scale: 10%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+  
+.afixed {
+  position: fixed;
+  left: 65%;
+  bottom: 12%;
+  }
+
+}
