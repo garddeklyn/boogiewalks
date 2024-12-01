@@ -3,6 +3,10 @@ body{
     cursor: url('imgs/cursor.png'), auto;
 }
 
+a :hover{
+  cursor: url('imgs/cursor1.png'), auto;
+}
+
 .tc-container{
     width: 75%;
     position: relative;
