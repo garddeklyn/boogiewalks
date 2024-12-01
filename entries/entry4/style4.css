@@ -32,6 +32,10 @@ body {
     }
 } 
 
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
+
 
 .ImageBlock:hover + .ImageHover {
     border: 20px;

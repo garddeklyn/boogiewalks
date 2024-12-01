@@ -1,14 +1,29 @@
 body{
-    background-color: rgb(11, 13, 15);
+    background-color: rgb(17, 20, 23);
+    background-image: url('imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: url('imgs/cursor.png'), pointer;
 }
 
+a :hover{
+    cursor: url('imgs/cursor1.png'), auto;
+}
 
-p{
-    font-family: 'Arial Black';
+.line{
+    display: flex;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    top: 2%;
+    left: 0%;
+    height: 2px;
+    z-index: 1;
+}
+
+.content{
     text-align: center;
-    font-size: large;
-    color: antiquewhite;
-    top: 50%;
 }
 
 @font-face {
@@ -16,4 +31,111 @@ p{
     src: url('fonts/ArialBlack.ttf');
     font-weight:normal;
     font-style:normal;
+}
+
+
+/* SMALL PAGE */
+@media all and (max-width: 850px) {
+
+.block{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 150px;
+    z-index: 0;
+}
+
+.title {
+    display: flex;
+    width: 20%;
+    scale: 40%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+    
+.fixed {
+    position: fixed;
+    left: 40%;
+    top: 3.5%;
+}
+
+.space{
+    height: 150px;
+}
+
+.units{
+    display: inline-block;
+    width: 14vw;
+    height: 14vw;
+    margin: .1%;
+    margin-top: .5%;
+    vertical-align: middle;
+    border-style: solid;
+}
+
+.units img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+}
+
+
+
+
+
+/* LARGE PAGE */
+@media all and (min-width: 851px) {
+
+.block{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    height: 180px;
+    z-index: 0;
+}
+
+.title {
+    display: flex;
+    width: 20%;
+    scale: 50%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+    
+.fixed {
+    position: fixed;
+    left: 40%;
+    top: 5%;
+}
+
+.space{
+    height: 200px;
+}
+
+.units{
+    display: inline-block;
+    width: 14vw;
+    height: 14vw;
+    margin: .5%;
+    margin-top: .5%;
+    vertical-align: middle;
+    border-style: solid;
+}
+
+.units img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 }

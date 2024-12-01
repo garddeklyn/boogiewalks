@@ -1,7 +1,13 @@
 body {
-    background-color: rgb(178, 5, 71);
+    background-color: rgb(97, 2, 39);
     background-image: url('imgs/untouchables2.jpg');
-    height: 100%
+    height: 100%;
+
+    cursor: url('imgs/cursor.png'), pointer;
+}
+
+a :hover{
+  cursor: url('imgs/cursor1.png'), auto;
 }
 
 .wrapper {
@@ -12,7 +18,6 @@ body {
   .wrapper > * {
     flex: 1 100%;
   }
-
   
   /* for mobile */
   @media all and (max-width: 800px) {
