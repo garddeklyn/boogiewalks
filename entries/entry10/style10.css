@@ -32,8 +32,17 @@ a:link, a:visited {
         width: 10px;
         height: 500px;
         scale: 13%;
-        top: -1070px;
-        right: -1280px;
+        top: -260px;
+        right: -1100px;
+        z-index: 1;
+        }
+    .title1{
+        position: absolute;
+        width: 10px;
+        height: 500px;
+        scale: 13%;
+        top: -820px;
+        right: -350px;
         z-index: 1;
         }
     .img{
@@ -134,14 +143,23 @@ a:link, a:visited {
 @media all and (min-width: 850px) {
 
     .title{
-    position: absolute;
-    width: 10px;
-    height: 500px;
-    scale: 25%;
-    top: -880px;
-    right: -1100px;
-    z-index: 1;
-    }
+        position: absolute;
+        width: 10px;
+        height: 500px;
+        scale: 25%;
+        top: -185px;
+        right: -900px;
+        z-index: 1;
+        }
+    .title1{
+        position: absolute;
+        width: 10px;
+        height: 500px;
+        scale: 25%;
+        top: -630px;
+        right: -300px;
+        z-index: 1;
+        }
     .img{
         width: fit-content;
         height: fit-content;
